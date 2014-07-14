@@ -3,6 +3,7 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
+* [Best Practices](/best-practices)
 * [Code Review](/code-review)
 
 High level guidelines:
