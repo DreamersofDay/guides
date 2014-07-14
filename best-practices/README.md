@@ -115,11 +115,10 @@ Bundler
 -------
 
 * Specify the [Ruby version] to be used on the project in the `Gemfile`.
-* Use a [versionless] `Gemfile` declarations for gems that have no know breaking changes in the latest version.
+* Use versionless `Gemfile` declarations for gems that have no know breaking changes in the latest version.
 * Use an [exact version] in the `Gemfile` for fragile gems, such as Rails.
 
 [Ruby version]: http://bundler.io/v1.3/gemfile_ruby.html
-[exact version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
 Postgres
 --------
