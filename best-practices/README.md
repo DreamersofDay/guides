@@ -54,7 +54,7 @@ Rails
 
 * Avoid bypassing validations with methods like `save(validate: false)`,
   `update_attribute`, and `toggle`.
-* Avoid instantiating more than one object in controllers.
+* Avoid instantiating more than one model in controllers.
 * Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
