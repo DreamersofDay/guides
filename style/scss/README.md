@@ -243,16 +243,18 @@ See [Mastering Sass extends and placeholders](http://8gramgorilla.com/mastering-
 
 ## SelectorDepth
 
-Don't write selectors with a depth of applicability greater than 3.
+Don't write selectors with a depth of applicability greater than 4.
+
+http://thesassway.com/beginner/the-inception-rule
 
 **Bad: selectors with depths of 4**
 ```scss
-.one .two .three > .four {
+.one .two .three .four > .five {
   ...
 }
 
-.one .two {
-  .three > .four {
+.one .two .three {
+  .four > .five {
     ...
   }
 }
@@ -260,12 +262,12 @@ Don't write selectors with a depth of applicability greater than 3.
 
 **Good**
 ```scss
-.one .two .three {
+.one .two .three .four {
   ...
 }
 
-.one .two {
-  .three {
+.one .two .three {
+  .four {
     ...
   }
 }
