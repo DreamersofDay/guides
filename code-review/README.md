@@ -22,6 +22,8 @@ Everyone
   If they are, use them with aplomb.
 * Talk in person if there are too many "I didn't understand" or "Alternative
   solution:" comments. Post a follow-up comment summarizing offline discussion.
+* If you opinions differ and the situation is not covered by the guidelines/styleguides,
+  involve more team members early in the discussion.
 
 Having Your Code Reviewed
 -------------------------
@@ -48,6 +50,7 @@ Reviewing Code
 
 Understand why the code is necessary (bug, user experience, refactoring). Then:
 
+* Comment only if you have a nice or constructive thing to say
 * Communicate which ideas you feel strongly about and those you don't.
 * Identify ways to simplify the code while still solving the problem.
 * If discussions turn too philosophical or academic, move the discussion offline
