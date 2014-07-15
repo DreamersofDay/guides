@@ -19,7 +19,7 @@ General
 Object-Oriented Design
 ----------------------
 
-* Avoid global variables.
+* Don't use global variables.
 * Avoid long parameter lists.
 * Limit collaborators of an object (entities an object depends on).
 * Limit an object's dependencies (entities that depend on an object).
