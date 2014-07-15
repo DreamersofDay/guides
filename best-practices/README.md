@@ -10,9 +10,12 @@ General
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
 * Don't use abbreviations
+* Don't use production credentials in a non-production environment
+* Follow the conventions for a [12 factor app]
 * [Exceptions should be exceptional].
 * [Keep the code simple].
 
+[12 factor app]: http://12factor.net/
 [Exceptions should be exceptional]: http://www.readability.com/~/yichhgvu
 [Keep the code simple]: http://www.readability.com/~/ko2aqda2
 
