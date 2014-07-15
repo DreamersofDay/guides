@@ -58,7 +58,7 @@ Rails
 * Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
-* Don't reference a model class directly from a view.
+* Don't reference an AR model class directly from a view.
 * Don't return false from `ActiveModel` callbacks, but instead raise an
   exception.
 * Don't use instance variables in partials. Pass local variables to partials
