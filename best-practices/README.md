@@ -87,6 +87,7 @@ Testing
 * Avoid `let!` in RSpec.
 * Avoid using instance variables in tests.
 * Avoid testing private methods.
+* Avoid stubbing methods on the class you are testing.
 * Disable real HTTP requests to external services with
   `WebMock.disable_net_connect!`.
 * Test background jobs with a [`Delayed::Job` matcher].
