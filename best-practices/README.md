@@ -75,6 +75,8 @@ Rails
 * Use `db/seeds.rb` for data that is required in all environments.
 * Use `dev:prime` rake task for development environment seed data.
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
+* Prefer `before_validation` hooks over overriding setters
+  in order to avoid relying on the order of setters execution
 
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
