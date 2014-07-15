@@ -10,6 +10,7 @@ General
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
 * Don't use abbreviations
+* Don't generalise until you have at least 3 examples
 * Don't use production credentials in a non-production environment
 * Follow the conventions for a [12 factor app]
 * [Exceptions should be exceptional].
