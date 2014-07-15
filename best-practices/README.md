@@ -84,6 +84,8 @@ Rails
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
 * Prefer `before_validation` hooks over overriding setters
   in order to avoid relying on the order of setters execution
+* Opt-in to validation
+* Avoid using Rails validation to enforce data consistency
 
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
@@ -95,6 +97,8 @@ Testing
 * Don't modify the environment with anything that persists after a test has finished.
 * Don't make assertions on complex objects (including AR). This includes message assertions.
 * Don't nest descriptions
+* Don't rely on attributes set by FactoryGirl
+* Avoid using FactoryGirl to build associated objects
 * Avoid dynamic assertions where it isn't immediately obvious what the assertion is
 * Avoid `any_instance` Prefer [dependency injection].
 * Avoid `let!` in RSpec.
