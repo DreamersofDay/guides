@@ -1,8 +1,6 @@
 Building Features
 =================
 
-## When building or updating a feature
-
 Think about a metric that will measure feature usage most effectively.
 
 Add it to [Mixpanel].
