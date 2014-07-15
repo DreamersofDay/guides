@@ -70,8 +70,6 @@ Rails
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
 * Use only one instance variable in each view.
-* Use `_url` suffixes for named routes in mailer views and [redirects].  Use
-  `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
 * Use `db/seeds.rb` for data that is required in all environments.
