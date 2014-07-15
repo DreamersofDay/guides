@@ -91,23 +91,21 @@ Rails
 Testing
 -------
 
-* Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
+* Don't modify the environment with anything that persists after a test has finished.
+* Don't make assertions on complex objects (including AR). This includes message assertions.
+* Don't nest descriptions
+* Avoid dynamic assertions where it isn't immediately obvious what the assertion is
+* Avoid `any_instance` Prefer [dependency injection].
 * Avoid `let!` in RSpec.
 * Avoid using instance variables in tests.
 * Avoid testing private methods.
 * Avoid stubbing methods on the class you are testing.
-* Disable real HTTP requests to external services with
-  `WebMock.disable_net_connect!`.
+* Avoid using VCR if there are other options
+* Disable real HTTP requests to external services
 * Test background jobs with a [`Delayed::Job` matcher].
 * Use named `subject` in RSpec.
-* Use [stubs and spies] \(not mocks\) in isolated tests.
-* Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
-* Use [assertions about state] for incoming messages.
-* Use stubs and spies to assert you sent outgoing messages.
-* Use a [Fake] to stub requests to external services.
 * Use integration tests to execute the entire app.
-* Use non-[SUT] methods in expectations when possible.
 * Add at least one acceptance test with Capybara following the happy path
   for every feature that adds or changes something in the UI.
 
