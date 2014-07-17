@@ -39,7 +39,7 @@ Ruby
 ----
 
 * Use [Rubocop]. Exceptions will be specified in the rubocop.yml file.
-* Avoid optional parameters. Does the method do too much?
+* Don't use `options` as an argument, instead rely on named parameters.
 * Prefer named parameters for 2 or more parameters.
 * Avoid monkey-patching.
 
