@@ -75,7 +75,7 @@ Rails
 * Generate necessary [Spring binstubs] for the project, such as `rake` and
   `rspec`, and add them to version control.
 * If there are default values, set them in migrations.
-* Keep `db/schema.rb` or `db/development_structure.sql` under version control.
+* Keep `db/initial_structure.sql` under version control.
 * Use only one instance variable in each view.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
