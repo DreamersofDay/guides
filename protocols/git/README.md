@@ -10,7 +10,7 @@ Maintain a Repo
   development machine or process.
 * Delete local and remote feature branches after merging.
 * Perform work in a feature branch.
-* Rebase frequently to incorporate upstream changes.
+* Rebase over your target branch frequently to incorporate upstream changes.
 * Use a [pull request] for code reviews.
 
 [pull request]: https://help.github.com/articles/using-pull-requests/
