@@ -6,7 +6,7 @@ A guide for programming within version control.
 Maintain a Repo
 ---------------
 
-* Avoid including files in source control that are specific to your
+* Don't include files in source control that are specific to your
   development machine or process.
 * Delete local and remote feature branches after merging.
 * Perform work in a feature branch.
