@@ -32,7 +32,7 @@ Rebase frequently to incorporate upstream changes.
 
 Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
-    git add --all
+    git add --patch
 
 When you've staged the changes, commit them.
 
