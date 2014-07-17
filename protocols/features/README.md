@@ -1,7 +1,7 @@
 Building Features
 =================
 
-Think about a metric that will measure feature usage most effectively.
+During iteration planning agree on a metric that will measure feature usage most effectively.
 
 Add it to [Mixpanel].
 
