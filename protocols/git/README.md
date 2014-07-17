@@ -88,13 +88,6 @@ When satisfied, they comment on the pull request :+1: | :thumbsup: | :shipit:
 Merge
 -----
 
-Rebase interactively. Squash commits like "Fix whitespace" into one or a
-small number of valuable commit(s). Edit commit messages to reveal intent. Run
-tests.
-
-    git fetch origin
-    git rebase -i origin/master
-
 Merge into master using the GitHub merge button.
 
 Delete your remote feature branch.
