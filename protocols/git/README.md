@@ -47,11 +47,6 @@ The commit may contain a description that can take any form.
 The developer should include a description if the commit needs context
 that can be provided in no other way (ie. surrounding commits, code comments)
 
-If you've created more than one commit, use a rebase to squash them into
-cohesive commits with good messages:
-
-    git rebase -i origin/master
-
 Share your branch.
 
     git push origin <branch-name>
