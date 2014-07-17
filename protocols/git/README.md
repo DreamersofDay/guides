@@ -28,8 +28,7 @@ Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
-    git fetch origin
-    git rebase origin/master
+    git pull --rebase origin master
 
 Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
