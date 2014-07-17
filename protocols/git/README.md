@@ -43,10 +43,9 @@ Write a [good commit message]. Example format:
 
     Present-tense summary under 50 characters
 
-    * More information about commit (under 72 characters).
-    * More information about commit (under 72 characters).
-
-    http:://project.management-system.com/ticket/123
+The commit may contain a description that can take any form.
+The developer should include a description if the commit needs context
+that can be provided in no other way (ie. surrounding commits, code comments)
 
 If you've created more than one commit, use a rebase to squash them into
 cohesive commits with good messages:
