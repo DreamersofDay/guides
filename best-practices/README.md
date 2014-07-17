@@ -145,8 +145,6 @@ Postgres
 Background Jobs
 ---------------
 
-* Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
-  the `ActiveRecord` object in the `perform` method.
 * Use `.delay` for mailers, `Background` classes for every other DJ.
 
 Email
