@@ -72,7 +72,7 @@ A team member other than the author reviews the pull request. They follow
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the GitHub
-web interface or in the project's chat room.
+or in the main Pull Request thread.
 
 For changes which they can make themselves, they check out the branch.
 
@@ -83,7 +83,7 @@ For changes which they can make themselves, they check out the branch.
 They make small changes right in the branch, test the feature on their machine,
 run tests, commit, and push.
 
-When satisfied, they comment on the pull request :+1:
+When satisfied, they comment on the pull request :+1: | :thumbsup: | :shipit:
 
 Merge
 -----
