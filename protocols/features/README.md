@@ -11,6 +11,8 @@ Track it.
 
 [Mixpanel]: https://mixpanel.com
 
+Add a badge in order to test the feature with a small group of users.
+
 Add at least one acceptance test for the happy path scenario.
 
 Add screenshots to your PR.
