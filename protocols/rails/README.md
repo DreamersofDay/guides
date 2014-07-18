@@ -77,5 +77,7 @@ Set Up Production Environment
 
 * Make sure that your [`Procfile`] is set up to run Puma.
 * Make sure the PG Backups add-on is enabled.
+* Make sure to create a Honeybadger project
+* Make sure that the Honeybadger project has Flowdock integration
 
 [`Procfile`]: https://devcenter.heroku.com/articles/procfile
