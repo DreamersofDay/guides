@@ -157,8 +157,16 @@ Email
 
 JavaScript
 ----------
+[Link to JS File]
 
-* Use CoffeeScript.
+Bundling Assets
+---------------
+
+* Use rails-assets.org to bundle libraries if they have a Bower package
+* Use JS Rails gems only if the libraries have Rails integrations
+* Do not modify any code in third party libraries
+* Use unminified version of third party libraries and leave them in `vendor/assets`
+* Prefer protocol-less urls when including assets
 
 HTML
 ----
