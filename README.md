@@ -8,9 +8,9 @@ Guides for getting things done, programming well, and programming in style.
 * [Style](/style)
   * [Scss](/style/scss)
 * [Protocols](/protocols)
-  * [Git](/git)
-  * [Rails](/rails)
-  * [Features](/features)
+  * [Git](/protocols/git)
+  * [Rails](/protocols/rails)
+  * [Features](/protocols/features)
 
 High level guidelines:
 
