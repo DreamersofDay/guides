@@ -53,6 +53,7 @@ $.ajax(
 * Always namespace your code. For example, a JS utility object in Octopus, `Octopus.IntegerToWord.convert()`
 * In absence of frameworks, we have a JS code dispatcher. Look for `dispatcher.js`
 * Dispatcher integrates with Rails by using executing 
+* The filename of a JS class should always be the snake case of the classname. E.g. ConvertToWord => convert_to_word.js.coffee
 
 ## Use CoffeeScript Only
 * Don't use backticks. Repeat - Don't ever use backticks.
