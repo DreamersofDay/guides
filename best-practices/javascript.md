@@ -20,7 +20,7 @@
 
 * Don't hardcode URLs endpoints in JS. See the above example. 
 * Prefer API endpoints to serve JSON representation of objects. Be RESTful.
-* Prefer the minimal updates. Don't do business logic on the frontend. 
+* Prefer minimal updates. Don't do business logic on the frontend. 
 ```coffeescript
 # An interaction is completed by setting used: true. We need to send an email and mark the used_at timestamp
 
