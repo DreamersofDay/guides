@@ -7,6 +7,10 @@ Guides for getting things done, programming well, and programming in style.
 * [Code Review](/code-review)
 * [Style](/style)
   * [Scss](/style/scss)
+* [Protocols](/protocols)
+  * [Git](/git)
+  * [Rails](/rails)
+  * [Features](/features)
 
 High level guidelines:
 
