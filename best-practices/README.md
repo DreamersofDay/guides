@@ -72,6 +72,7 @@ Rails
   from view templates.
 * Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
   models.
+* Don't add routes that have no corresponding actions.
 * Generate necessary [Spring binstubs] for the project, such as `rake` and
   `rspec`, and add them to version control.
 * If there are default values, set them in migrations.
