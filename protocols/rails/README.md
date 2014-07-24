@@ -20,7 +20,7 @@ Create GitHub repo and set it as remote
     git remote add origin git@github.com:organization/app.git
 
 Push it
-  
+
     git push -u origin master
 
 Create staging Heroku app
@@ -28,7 +28,7 @@ Create staging Heroku app
     heroku apps:create js-app-staging
 
 Create production Heroku app
-  
+
     heroku apps:create js-app-production
 
 Set Up App
@@ -51,7 +51,7 @@ Merge from GitHub.
 Wait for the CI to test the master branch.
 
 View the list of new commits.
-  
+
   heroku pipeline:diff -a js-app-staging
 
 If necessary, add new environment variables to staging and production.
@@ -77,7 +77,9 @@ Set Up Production Environment
 
 * Make sure that your [`Procfile`] is set up to run Puma.
 * Make sure the PG Backups add-on is enabled.
-* Make sure to create a Honeybadger project
-* Make sure that the Honeybadger project has Flowdock integration
+* Make sure to [create a Honeybadger project]
+* Make sure that the Honeybadger project has [Flowdock integration]
 
 [`Procfile`]: https://devcenter.heroku.com/articles/procfile
+[create a Honeybadger project]: http://docs.honeybadger.io/article/71-add-a-new-application-or-project-to-honeybadger
+[Flowdock integration]: http://docs.honeybadger.io/article/155-how-to-integrate-honeybadger-with-flowdock
