@@ -162,6 +162,12 @@ JavaScript
 
 * Use CoffeeScript.
 
+jQuery
+------
+
+* When selecting DOM elements, only use CSS classes prefixed with `js_`. That way, when a developer sees such a class in the HTML source, they'll know exactly where to look to discover its purpose.
+* Prefer [our dispatcher](https://coderwall.com/p/mhvucw) over using `$(handler)` in every file.
+
 HTML
 ----
 
