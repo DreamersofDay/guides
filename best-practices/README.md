@@ -166,7 +166,7 @@ jQuery
 ------
 
 * When selecting DOM elements, only use CSS classes prefixed with `js_`. That way, when a developer sees such a class in the HTML source, they'll know exactly where to look to discover its purpose.
-* Prefer [our dispatcher](https://coderwall.com/p/mhvucw) over using `$(handler)` in every file.
+* Prefer [our dispatcher](https://coderwall.com/p/mhvucw) when js functionality has to be invoked on certain pages/controller actions instead of using `$(handler)`. [Example](https://gist.github.com/tadast/cb7618b26c7d5cd3d02a)
 
 HTML
 ----
