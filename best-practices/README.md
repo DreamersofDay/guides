@@ -87,6 +87,7 @@ Rails
   in order to avoid relying on the order of setters execution
 * Opt-in to validation
 * Avoid using Rails validation to enforce data consistency
+* Sort route definitions in routes.rb using the following order: singular resources, plural resources with no block definitions, plural resources with block definitions, namespaced resources, custom matchers. All sub-groups should be ordered alphabetically.
 
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
