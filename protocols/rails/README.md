@@ -41,7 +41,7 @@ Git Protocol
 
 Follow the normal [Git Protocol](/protocol/git).
 
-Setup a webhook that points to an installation of`https://github.com/alphasights/lion-api`
+Setup a webhook that points to an installation of `https://github.com/alphasights/lion-api`
 and that triggers only on Pull Request events.
 
 Deploy
