@@ -82,6 +82,7 @@ Rails
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
 * Use `db/seeds.rb` for data that is required in all environments.
+* Use Postgresql
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
 * Prefer `before_validation` hooks over overriding setters
   in order to avoid relying on the order of setters execution
