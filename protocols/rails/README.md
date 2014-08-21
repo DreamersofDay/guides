@@ -47,12 +47,12 @@ and that triggers only on Pull Request events.
 Stats
 -----
 
-Set up the project on [Segment.io](https://segment.io/) and add the [Heap](heapanalytics.com) integration.
+Set up projects on [Segment.io](https://segment.io/) and add the [Heap](heapanalytics.com) integration.
 
-Name your apps:
+Name your projects:
 
-- appname (for production)
-- appname-development (for development and staging)
+- `appname` (for production)
+- `appname-development` (for development and staging)
 
 Deploy
 ------
