@@ -54,6 +54,8 @@ Name your projects:
 - `appname` (for production)
 - `appname-development` (for development and staging)
 
+Add to all the environments the appropiate `SEGMENT_WRITE_KEY`
+
 Deploy
 ------
 
