@@ -27,6 +27,7 @@
 - Then run `npm install && ember generate divshot`
 - Rename the app name in the divshot.json file to `as-project-name`
 
+```
 {
   "name": "as-phoenix",
   "root": "./dist",
@@ -36,7 +37,7 @@
     "/**": "index.html"
   }
 }
-
+```
 
 - Let the CI do the deployment to staging (ember-cli-alphasights takes care of that)
 - Promote to production when staging is ok with `dumbot divshot promote project-name`
