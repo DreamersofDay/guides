@@ -89,6 +89,7 @@ Rails
 * Opt-in to validation
 * Avoid using Rails validation to enforce data consistency
 * Sort route definitions in routes.rb using the following order: singular resources, plural resources with no block definitions, plural resources with block definitions, namespaced resources, custom matchers. All sub-groups should be ordered alphabetically.
+* Don't use Turbolinks
 * Be RESTful. Don't be afraid of creating a single action controller as long as it clarifies intent.
 * Use Puma as the web server
 
