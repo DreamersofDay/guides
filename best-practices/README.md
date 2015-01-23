@@ -82,6 +82,7 @@ Rails
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
 * Use `db/seeds.rb` for data that is required in all environments.
+* Use Postgresql
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
 * Prefer `before_validation` hooks over overriding setters
   in order to avoid relying on the order of setters execution
@@ -89,6 +90,8 @@ Rails
 * Avoid using Rails validation to enforce data consistency
 * Sort route definitions in routes.rb using the following order: singular resources, plural resources with no block definitions, plural resources with block definitions, namespaced resources, custom matchers. All sub-groups should be ordered alphabetically.
 * Don't use Turbolinks
+* Be RESTful. Don't be afraid of creating a single action controller as long as it clarifies intent.
+* Use Puma as the web server
 
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
@@ -163,6 +166,12 @@ JavaScript
 ----------
 
 * Use CoffeeScript.
+
+jQuery
+------
+
+* When selecting DOM elements, only use CSS classes prefixed with `js_`. That way, when a developer sees such a class in the HTML source, they'll know exactly where to look to discover its purpose.
+* Prefer [our dispatcher](https://coderwall.com/p/mhvucw) when js functionality has to be invoked on certain pages/controller actions instead of using `$(handler)`. [Example](https://gist.github.com/tadast/cb7618b26c7d5cd3d02a)
 
 HTML
 ----

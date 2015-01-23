@@ -31,7 +31,7 @@ Create production Heroku app
 
     heroku apps:create js-app-production
 
-Set Up App
+Environment
 ----------
 
 Get `.env` staging vars from the vault.
@@ -40,6 +40,21 @@ Git Protocol
 ------------
 
 Follow the normal [Git Protocol](/protocol/git).
+
+Setup a webhook that points to an installation of `https://github.com/alphasights/lion-api`
+and that triggers only on Pull Request events.
+
+Stats
+-----
+
+Set up projects on [Segment.io](https://segment.io/) and add the [Heap](heapanalytics.com) integration.
+
+Name your projects:
+
+- `appname` (for production)
+- `appname-development` (for development and staging)
+
+Add to all the environments the appropiate `SEGMENT_WRITE_KEY`
 
 Deploy
 ------
