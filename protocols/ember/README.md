@@ -15,21 +15,7 @@
 ```
 "ember-cli-divshot": "git+https://git@github.com/alphasights/ember-cli-divshot.git"
 ```
-- Run `npm install && ember generate divshot`
-- Rename the app name in the divshot.json file to `as-project-name`
-
-```
-{
-  "name": "as-phoenix",
-  "root": "./dist",
-  "routes": {
-    "/tests": "tests/index.html",
-    "/tests/**": "tests/index.html",
-    "/**": "index.html"
-  }
-}
-```
-
+- Run `npm install && ember generate divshot --app=as-project-name` (note the `as-` prefix)
 - Ask people belonging to the DevOps group to add the `DIVSHOT_TOKEN` env var to CircleCI
 - Push to master
 - Let the CI do the deployment to staging (ember-cli-alphasights takes care of that)
