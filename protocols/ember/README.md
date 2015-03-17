@@ -7,12 +7,7 @@
 
 ### CircleCI
 
-- Install ember-cli-alphasights by adding the following dependency to the package.json
-```
-"ember-cli-alphasights": "git+ssh://git@github.com/alphasights/ember-cli-alphasights.git"
-```
-- Run `npm install && ember generate alphasights`
-- Remove `ember-cli-alphasights` from your package.json
+- Install ember-cli-alphasights by running `ember install addon ember-cli-alphasights`
 
 ### Deploy
 
