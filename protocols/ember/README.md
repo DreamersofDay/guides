@@ -39,6 +39,7 @@
 - Push to master
 - Let the CI do the deployment to staging (ember-cli-alphasights takes care of that)
 - Promote to production when staging is ok with `dumbot divshot promote project-name`
+- Ask people belonging to the DevOps group to transfer the app to the AlphaSights organization
 
 Manual alternative:
 - Deploy to staging via `ember divshot push staging`
