@@ -13,7 +13,7 @@
 
 - Install ember-cli-divshot by adding the following dependency to the package.json file
 ```
-"ember-cli-divshot": "git+https://git@github.com/matteodepalo/ember-cli-divshot.git"
+"ember-cli-divshot": "git+https://git@github.com/alphasights/ember-cli-divshot.git"
 ```
 - Run `npm install && ember generate divshot`
 - Rename the app name in the divshot.json file to `as-project-name`
