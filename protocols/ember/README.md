@@ -11,20 +11,14 @@
 
 "ember-cli-alphasights": "git+ssh://git@github.com/alphasights/ember-cli-alphasights.git"
 
-- Then run `npm install && ember generate alphasights`
+- Run `npm install && ember generate alphasights`
+- Remove `ember-cli-alphasights` from your package.json
 
 ### Deploy
 
-- Install the Divshot CLI package `npm install -g divshot-cli`
-- Login your divshot account `divshot login`
-- You need to add the `DIVSHOT_TOKEN` env var to CircleCI environment variables. Ask people belonging to the DevOps group to do this for you.
-
-- Transfer the app from your account to the AlphaSights Divshot organization.
 - Install ember-cli-divshot by adding the following dependency to the package.json file
-
 "ember-cli-divshot": "git+https://git@github.com/matteodepalo/ember-cli-divshot.git"
-
-- Then run `npm install && ember generate divshot`
+- Run `npm install && ember generate divshot`
 - Rename the app name in the divshot.json file to `as-project-name`
 
 ```
@@ -39,6 +33,8 @@
 }
 ```
 
+- Ask people belonging to the DevOps group to add the `DIVSHOT_TOKEN` env var to CircleCI
+- Push to master
 - Let the CI do the deployment to staging (ember-cli-alphasights takes care of that)
 - Promote to production when staging is ok with `dumbot divshot promote project-name`
 
