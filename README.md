@@ -12,6 +12,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Rails](/protocols/rails)
   * [Features](/protocols/features)
   * [Ember](/protocols/ember)
+* [Commit Message](/commit-message-convention)
 
 High level guidelines:
 
