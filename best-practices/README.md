@@ -166,6 +166,10 @@ JavaScript
 ----------
 
 * Use CoffeeScript.
+* Beware of closure as it can cause memory leak issue.
+* Avoid var self = this. OR var that = this OR ... Use $.proxy if needed
+* Put all the var on top of the function block to avoid hoist. [FYI](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html). But soon it will not be a problem in ES6.
+* Use [ES6 features](https://github.com/lukehoban/es6features) via [babeljs](http://babeljs.io/) for now.
 
 jQuery
 ------
@@ -177,20 +181,24 @@ HTML
 ----
 
 * Don't use a reset button for forms.
+* Put &lt;script> tag after &lt;body> tag for optimising the performance
+* Use HTML5 attributes: async & defer, in &lt;script> tag if applicable. [FYI](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 CSS
 ---
 
 * Use Sass.
+* Use translate instead of manipulating top and left for animation. [FYI](http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/).
+* Use translateY(-50%), instead of table-cell + vertical-align: middle, for vertical align. Works in IE9+.
 
 Sass
 ----
 
 * Use `image-url` and `font-url`, not `url`, so the asset pipeline will re-write
-  the correct paths to assets.
+  the correct paths to assets. (both `image-url` and `font-url` only work in rails environment)
 
 Browsers
 --------
 
 * Don't support clients without Javascript.
-* Don't support IE6 or IE7.
+* Don't support IE6 or IE7 or IE8.
