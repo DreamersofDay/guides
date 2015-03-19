@@ -165,7 +165,6 @@ Email
 JavaScript
 ----------
 
-* Use CoffeeScript.
 * Beware of closure as it can cause memory leak issue.
 * Avoid var self = this. OR var that = this OR ... Use $.proxy if needed
 * Put all the var on top of the function block to avoid hoist. But soon it will not be a problem in ES6. [FYI](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html).
