@@ -166,7 +166,7 @@ JavaScript
 ----------
 
 * Beware of closure as it can cause memory leak issue.
-* Avoid var self = this. OR var that = this OR ... Use $.proxy if needed
+* Avoid var self = this. OR var that = this OR ... Use ES6 fat arrow, bind() or $.proxy instead
 * Put all the var on top of the function block to avoid hoist. But soon it will not be a problem in ES6. [FYI](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html).
 * Use [ES6 features](https://github.com/lukehoban/es6features) via [babeljs](http://babeljs.io/) for now.
 
