@@ -7,7 +7,7 @@
 
 ### CircleCI
 
-- Install ember-cli-alphasights by running `ember install addon ember-cli-alphasights`
+- Install ember-cli-alphasights by running `ember install:npm ember-cli-alphasights`
 - Run the generator `ember generate alphasights`
 
 ### Deploy
