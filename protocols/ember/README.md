@@ -20,6 +20,7 @@
 - Ask people belonging to the DevOps group to add the `DIVSHOT_TOKEN` env var to CircleCI
 - Push to master
 - Let the CI do the deployment to staging (ember-cli-alphasights takes care of that)
+- Move the app from the devops+production@alphasights.com account to the AlphaSights organization on Divshot
 - Promote to production when staging is ok with `dumbot divshot promote project-name`
 
 Manual alternative:
