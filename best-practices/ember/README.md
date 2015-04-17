@@ -1,5 +1,7 @@
 # Ember Best Practices
 
+This is a collection of best practices we've found useful when developing Ember applications at AlphaSights. You're incouraged to follow them.
+
 ## Structure
 
 ### Router
