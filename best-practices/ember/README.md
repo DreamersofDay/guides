@@ -6,7 +6,7 @@ This is a collection of best practices we've found useful when developing Ember 
 
 ### Router
 
-Pretty much everything apart from components is laid out based on the router structure, e.g.:
+Pretty much everything apart from components has to be laid out based on the router structure, e.g.:
 
 ```javascript
 Router.map(function() {
