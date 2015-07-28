@@ -34,19 +34,17 @@ Based on the routes above, the corresponding view structure is this one:
 - application
 - application-error
 
-As a general rule, views/templates that are used exclusively inside one resource should be put inside the folder for that resource.
-Views used in the application route or views that are reused in different routes should go in the views root folder.
+As a general rule, templates that are used exclusively inside one resource should be put inside the folder for that resource.
 
 ### Styles
-Styles should follow exactly the same folder structure as their corresponding views/components. This is not required by any naming convention, but helps greatly to quickly find the styles for a certain section of the application. It follows that each view and component should have an unique class name (plus optional tag name) assigned to it.
+Styles should follow exactly the same folder structure as their corresponding components. This is not required by any naming convention, but helps greatly to quickly find the styles for a certain section of the application. It follows that each component should have an unique class name (plus optional tag name) assigned to it.
 HTML elements global styling (a.k.a reset) should be put inside the `styles/_default.scss` file.
 
 ## Coding style and best practices
 
 ### Templates
-A `render` statement should always refer to a view, never directly to a template.
-Templates should not contain the root element with the main view class. Add the main class to the `classNameBindings` property in the view file.
-For components, the main class should be the same as the component name, minus the `as-` prefix. For views, it should be the same as the view name.
+Templates not backed by a component should always contain the root element with the main class named after the template.
+For components, add the main class to the `classNameBindings` property.
 
 ---
 
@@ -72,40 +70,16 @@ Whenever you need a wrapper for a certain element, unless absolutely necessary, 
 
 ---
 
-Use the least amount of wrapper elements possible.
-
-**Do this:**
-
-```
-{{#as-scrollable tagName="nav"}}
-  <header>
-  </header>
-{{/as-scrollable}}
-```
-
-**Don't do this:**
-
-```
-{{#as-scrollable}}
-  <nav>
-    <header>
-    </header>
-  </nav>
-{{/as-scrollable}}
-```
-
----
-
 Use "Clojure" style formatting for helper invocations in case the parameter list is very long.
 
 **Do this:**
 
 ```
 {{as-quick-jump-result-content
-     title=name
-     details=accountName
-     resourceId=id
-     resourcePath="client/contacts"}}
+    title=name
+    details=accountName
+    resourceId=id
+    resourcePath="client/contacts"}}
 ```
 
 **Don't do this:**
@@ -127,8 +101,6 @@ Use `.` as a separator for the Ember resolver. Use `/` only for templates.
 **Do this:**
 
 ```
-{{render "team.projects"}}
-
 export default Ember.View.extend({
   templateName: 'team/projects'
 });
@@ -137,8 +109,6 @@ export default Ember.View.extend({
 **Don't do this:**
 
 ```
-{{render "team/projects"}}
-
 export default Ember.View.extend({
   templateName: 'team.projects'
 });
@@ -146,7 +116,7 @@ export default Ember.View.extend({
 
 ### Styles
 
-Prefix global variable names with the file/directory name, i. e. if you're adding a variable to `views/team/_project.scss`, make sure to prefix it with `team-project`.
+Prefix global variable names with the file/directory name, i. e. if you're adding a variable to `templates/team/_project.scss`, make sure to prefix it with `team-project`.
 
 **Do this:**
 
@@ -279,9 +249,9 @@ Prefer using the `on` syntax for events like `didInsertElement` instead of overr
 **Do this:**
 
 ```javascript
-setupFoundation: function() {
+setupFoundation: Ember.on('didInsertElement', function() {
   Ember.$(document).foundation({ dropdown: {} });
-}.on('didInsertElement'),
+}),
 ```
 
 **Don't do this:**
