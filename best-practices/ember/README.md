@@ -250,7 +250,7 @@ Prefer using the `on` syntax for events like `didInsertElement` instead of overr
 **Do this:**
 
 ```javascript
-setupFoundation: Ember.computed('on', function() {
+setupFoundation: Ember.on('didInsertElement', function() {
   Ember.$(document).foundation({ dropdown: {} });
 }),
 ```
