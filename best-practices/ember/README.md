@@ -44,8 +44,7 @@ HTML elements global styling (a.k.a reset) should be put inside the `styles/_def
 
 ### Templates
 Templates not backed by a component should always contain the root element with the main class named after the template.
-
-For components, add the main class to the `classNameBindings` property. The class should be the same as the component name, minus the `as-` prefix.
+For components, add the main class to the `classNameBindings` property.
 
 ---
 
