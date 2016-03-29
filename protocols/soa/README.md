@@ -2,9 +2,9 @@
 
 ## What is the purpose of this document?
 
-SOA is a loaded concept. There is a lot of history behind that little acronym
-and I want us to be clear as a company how we define SOA, it's benefits,
-potential pit falls.
+Service Oriented Architecture (SOA) is a loaded concept. There is a lot of history behind that little acronym
+and I want us to be clear as a company how we define SOA, its
+benefits, and potential pit falls.
 
 ## What we want SOA to accomplish for us
 
@@ -23,15 +23,17 @@ Later, I will go on to describe how I think these benefits can be accomplished.
 SOA, with it’s legacy, brings along with it a lot of baggage. We need to
 explicitly say what we are not talking about.
 
-A quick aside about vendors: I’ll also say that a vendor is trying to sell us as
-“SOA” in a box is snake oil. It doesn’t exist and never will. SOA are specific
-to businesses. There is no one size fits all. Vendors make money off of
+A quick aside about vendors: If a third party vendor is trying to sell us
+“SOA” in a box, what they're really seeling is snake oil. It doesn’t
+exist and never will. Service based architectures are specific to
+businesses. There is no one size fits all. Vendors make money off of
 middleware for middleware for middleware and they just want to sell you as much
 as possible (and support contracts of course). _[Rant over]_
 
 Many service oriented technologies have been tried over the years in SOA, most
 of them have failed or been deprecated by something better. Many of them sounded
-like good ideas at the time, but as time progressed, they were proven to be
+like good ideas at the time, but as time progressed, they were proven
+to be poor choices for one reason or another.
 
 The following technologies should not be part of our SOA. Not only that, but as
 we are building, we should avoid making the same mistakes that they did. That
@@ -52,7 +54,7 @@ we shouldn’t be using them or why they were problems back in the day.
   (lessons learned).
 
 #### SOAP and WS-*
-* XML based (overly verbose).
+* XML based (overly verbose, schemas can get unruly).
 * The benefits that you used to get (enveloping) have been supplanted by REST. REST is
   simpler. Modern web development frameworks are capable of creating RESTful
   resources.
@@ -77,8 +79,9 @@ we shouldn’t be using them or why they were problems back in the day.
   lines between services incorrectly.
 
 ### Notes on services that touch each other too much
+
 It’s worth noting that DCOM, CORBA, and RPC are three technologies that failed
-because of type coupling of the object model between services. Specifically, I
+because of tight coupling of the object model between services. Specifically, I
 think they failed because they did not take into account common patterns in
 object design. Even though they are services, not objects, I think some of the
 same basic principles apply. Most notably:
@@ -87,6 +90,7 @@ same basic principles apply. Most notably:
   * These services were not drying because domain model definitions were
     repeated over systems. Component level concepts, especially workflow
     knowledge, were shared.
+
 * Single Responsibility Principle
   * Again, this has to do with shared knowledge of workflows.
   * Services also know a lot about each other. They knew where the services live,
@@ -148,7 +152,7 @@ Teams should also own their product for it’s entire life cycle. This includes
 business stakeholders, not just the tech team. The business stakeholders should
 be as familiar with the service as the rest of the team including metrics. It
 may sound obvious, but the team should also have a common language when
-referring to the system.
+referring to the system (aka ubiquitous langauge from Domain Driven Design).
 
 Teams should also be able to release their product independent of other teams.
 Cross-team dependencies should be kept to a minimum to avoid blocking each
@@ -192,7 +196,8 @@ bounces around getting picked up by various services. First, hitting persisting
 my rating in some way. Then maybe getting picked up by a User activity service.
 Then perhaps going to a real time data aggregation pipeline. Then possibly
 through an AB testing capture service. All of that could happen in parallel as
-well. The workflow in this case really doesn’t care which happens first.
+well. The workflow in this case really doesn’t care which happens
+first (it's order independent).
 
 I think the _Software Fortress_ model is actually a pretty good fit for SOA.
 From the book in reference to a single Software Fortress (service in this
@@ -275,7 +280,7 @@ exist between service and consumer that doesn’t slow down development and
 instead speeds it up. We don’t want to put the HATE in HATEOAS.
 
 The first fundamental concept is simple but key to implementing this properly.
-It’s on the Must Ignore pattern. In in a nutshell, the pattern states that if
+It’s the Must Ignore pattern. In a nutshell, the pattern states that if
 you don’t know what something is in the markup, you must ignore it. Think custom
 HTTP headers or custom markup tags in HTML. The browser doesn’t error, it just
 ignores them. With CDC through hypermedia, clients should ignore keys they don’t
@@ -303,16 +308,16 @@ use event driven architecture very broadly (myself include). Others have a
 really narrow view. My definition is a system with a set of services that do not
 directly interact, but instead write message to some kind of bus. While this is
 happening, services are also listening for events and responding accordingly if
-they want to. It’s really broard, but it’s good enough for this context.
+they want to. It’s really broad, but it’s good enough for this context.
 
-Event driven architecture is possibly one of the most decoupled ways to handle
-services. There is not direct communication between services. This doesn’t
-easily lend itself to the standard producer/consumer model (that’s more a REST
+Event driven architecture is one of the most decoupled ways to handle
+services. There is no direct communication between services. This doesn’t
+easily lend itself to the standard request/response model (that’s more a REST
 thing). That said, it is a perfect fit for workflows.
 
 When multiple events are combined you are essentially making Workflows (or
 Sagas) which can be really powerful. There are so many examples of workflows
-that it’s hard to give one that doesn’t make it sounds too narrowly focused.
+that it’s hard to give one that doesn’t make it sound too narrowly focused.
 Suffice it to say that sets of interactions can be easily modeled in this way.
 With these kinds of workflows, we can also take certain steps (services) and
 reorder them to meet new business needs as they arise. Think different workflows
@@ -375,10 +380,5 @@ What should SOA do for AlphaSights:
         be able to with ease.
 
 I didn’t cover web hooks, infrastructure, service orchestration and a bunch of
-other stuff, but I wanted to get this out there and see what everyone thinks. If
-this was a conference talk, I think I would have just gone on for about 2.5
-hours :). I think this is the start of a good framework that can help us move forward and
+other stuff. I think this is the start of a good framework that can help us move forward and
 start to deliver our SOA while simultaneously providing business value.
-
-I think it would be really beneficial to talk about some of this stuff out loud
-as well. Maybe developer university?
