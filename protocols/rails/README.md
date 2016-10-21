@@ -47,7 +47,7 @@ and that triggers only on Pull Request events.
 Stats
 -----
 
-Set up projects on [Segment.io](https://segment.io/) and add the [Heap](heapanalytics.com) integration.
+Set up projects on [Segment.io](https://segment.io/) and add the [Heap](https://heapanalytics.com) integration.
 
 Name your projects:
 
